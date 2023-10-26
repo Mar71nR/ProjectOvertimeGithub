@@ -18,13 +18,13 @@
     {"name":"Punches","order":3,"path":"folders/Sprites/Punches.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"ATK's","order":6,"path":"folders/Objects/ATK's.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sprPlyrHeavyPunch","order":3,"path":"sprites/sprPlyrHeavyPunch/sprPlyrHeavyPunch.yy",},
     {"name":"sprPlyrBasicPunch","order":2,"path":"sprites/sprPlyrBasicPunch/sprPlyrBasicPunch.yy",},
     {"name":"sprEnmHit","order":1,"path":"sprites/sprEnmHit/sprEnmHit.yy",},
-    {"name":"ATKbasicPunch","order":4,"path":"objects/ATKbasicPunch/ATKbasicPunch.yy",},
-    {"name":"ATK","order":2,"path":"objects/ATK/ATK.yy",},
+    {"name":"ATKbasicPunch","order":1,"path":"objects/ATKbasicPunch/ATKbasicPunch.yy",},
     {"name":"sprPlyrHit","order":4,"path":"sprites/sprPlyrHit/sprPlyrHit.yy",},
     {"name":"sprPlyrWalking","order":1,"path":"sprites/sprPlyrWalking/sprPlyrWalking.yy",},
     {"name":"sprEnmWalking","order":2,"path":"sprites/sprEnmWalking/sprEnmWalking.yy",},
@@ -32,6 +32,6 @@
     {"name":"sfxStrongPunch1","order":2,"path":"sounds/sfxStrongPunch1/sfxStrongPunch1.yy",},
     {"name":"objEnemy","order":1,"path":"objects/objEnemy/objEnemy.yy",},
     {"name":"sprStrongPunchHBox","order":1,"path":"sprites/sprStrongPunchHBox/sprStrongPunchHBox.yy",},
-    {"name":"ATKstrongPunch","order":5,"path":"objects/ATKstrongPunch/ATKstrongPunch.yy",},
+    {"name":"ATKstrongPunch","order":2,"path":"objects/ATKstrongPunch/ATKstrongPunch.yy",},
   ],
 }

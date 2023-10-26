@@ -11,8 +11,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"StunLength","path":"objects/ATK/ATK.yy",},"value":"10",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ATK's",
+    "path": "folders/Objects/ATK's.yy",
   },
   "parentObjectId": {
     "name": "ATK",

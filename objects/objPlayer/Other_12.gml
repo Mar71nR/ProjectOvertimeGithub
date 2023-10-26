@@ -8,11 +8,11 @@ if(IsHit == false && CurrentHP > 0)
 {
 	if (AttackType == "Basic Punch")
 	{
-		sprite_index = sprBasicPunchHBox
-		MyAttack = instance_create_layer(self.x,self.y,"Instances",ATKbasicPunch)
+		sprite_index = sprPlyrBasicPunch
+		MyAttack = instance_create_layer(self.x,self.y, "Instances", ATKbasicPunch)
 	} else if (AttackType == "Strong Punch")
 	{
-		sprite_index = sprStrongPunchHBox
+		sprite_index = sprPlyrHeavyPunch
 		MyAttack = instance_create_layer(self.x,self.y, "Instances", ATKstrongPunch)
 	}
 }

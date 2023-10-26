@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "ATK's",
+    "path": "folders/Objects/ATK's.yy",
   },
   "parentObjectId": null,
   "persistent": false,
