@@ -38,5 +38,5 @@
     "path": "sprites/sprBasicPunchHBox/sprBasicPunchHBox.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
