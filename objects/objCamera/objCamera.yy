@@ -26,14 +26,7 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"x","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"objPlayer.x","varType":4,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"y","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"objPlayer.y","varType":4,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"TargetX","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"x","varType":4,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"TargetY","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"y","varType":4,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"State","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"Player\"","varType":2,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"MoveSpeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"15","varType":0,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
     "name": "sprCamera",

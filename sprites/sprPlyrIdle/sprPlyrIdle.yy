@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "sprPlyrIdle",
   "bbox_bottom": 127,
-  "bbox_left": 30,
-  "bbox_right": 105,
-  "bbox_top": 6,
+  "bbox_left": 26,
+  "bbox_right": 99,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b8e21e0d-cb00-4e5f-ae7c-6b5dc91441ba",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de95ba83-c03b-444d-8fef-a1939955f741",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5f516d1c-0af9-4832-87c1-3d90746cb645","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"247c63af-86a6-4b21-b90f-db3391831f65","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 7,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b8e21e0d-cb00-4e5f-ae7c-6b5dc91441ba","path":"sprites/sprPlyrIdle/sprPlyrIdle.yy",},},},"Disabled":false,"id":"39f6c30f-0f3f-45f3-9aea-c80603adec18","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"de95ba83-c03b-444d-8fef-a1939955f741","path":"sprites/sprPlyrIdle/sprPlyrIdle.yy",},},},"Disabled":false,"id":"8a7a3e36-a16e-4fa3-8612-0d5d7043df99","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

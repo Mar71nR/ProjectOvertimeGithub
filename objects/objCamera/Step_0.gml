@@ -5,6 +5,7 @@ var MyBr = instance_nearest(x, y, objBattleRegion)
 
 switch State{
 	case "Player":
+		
 		TargetX = objPlayer.x
 		TargetY = objPlayer.y
 		
@@ -15,10 +16,10 @@ switch State{
 		break
 	
 	case "Region":
-		var MinX = objBattleRegion.LeftEdge + 512
-		var MaxX = objBattleRegion.RightEdge -512
-		var MinY = objBattleRegion.TopEdge + 384
-		var MaxY = objBattleRegion.BottomEdge - 384
+		var MinX = objBattleRegion.LeftEdge + (1366/2)
+		var MaxX = objBattleRegion.RightEdge - (1366/2)
+		var MinY = objBattleRegion.TopEdge + (768/2)
+		var MaxY = objBattleRegion.BottomEdge - (768/2)
 		
 		TargetX = clamp(objPlayer.x, MinX, MinX)
 		TargetY = clamp(objPlayer.y, MinY, MaxY)
@@ -30,8 +31,8 @@ switch State{
 		break
 }
 
-TargetX = objPlayer.x
-		TargetY = objPlayer.y
+//TargetX = objPlayer.x
+//TargetY = objPlayer.y
 
 if(distance_to_point(TargetX,TargetY) < MoveSpeed){
     x = TargetX;

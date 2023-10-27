@@ -67,21 +67,27 @@ if(CurrentHP > 0)
 		}else if((XSpeed!=0 || YSpeed != 0) && sprite_index!=sprPlyrWalking && OnGround == true){
 			sprite_index = sprPlyrWalking;
 		}
-	}
-	//If the player is on the ground, their GroundY is equal to the current y position.
-	if(OnGround == true)
+	}else if(IsHit == true)
 	{
-		GroundY = y;
-	}
-//Sets the Players' depth. We're using GroundY in order for the player to move behind and in front of things.
-	depth = -1*GroundY;
+	sprite_index = sprPlyrHit
+	}	
 }else
 {
-    instance_destroy();
+    MyCamera.State = "Dead"
+	sprite_index = sprPlayerDead
+	if (alarm[1] == -1)
+	{
+		alarm[1] = 90
+	}
+}
+//If the player is on the ground, their GroundY is equal to the current y position.
+if(OnGround == true)
+{
+	GroundY = y;
 }
 
-
-
+//Sets the Players' depth. We're using GroundY in order for the player to move behind and in front of things.
+depth = -1*GroundY;
 
 
 
