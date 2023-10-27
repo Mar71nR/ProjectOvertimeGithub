@@ -15,6 +15,13 @@ if(IsHit == false && CurrentHP > 0)
 	{
 		sprite_index = sprPlyrHeavyPunch
 		MyAttack = instance_create_layer(self.x,self.y, "Instances", ATKstrongPunch)
+	} else if (AttackType == "Uppercut")
+	{
+		sprite_index = sprPlayerUppercut
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKuppercut)
+	} else if (AttackType == "Triple Punch"){
+		sprite_index = sprPlayerTripPunch
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKtriplePunch)
 	}
 }
 

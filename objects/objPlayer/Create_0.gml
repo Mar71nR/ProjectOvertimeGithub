@@ -3,8 +3,8 @@
 
 MyCamera = instance_create_layer(x,y,"Instances", objCamera)
 
-
-
+EnemyList = ds_list_create()
+CommandList = ds_list_create()
 
 
 

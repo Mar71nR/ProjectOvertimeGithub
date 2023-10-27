@@ -23,21 +23,26 @@ switch (State){
 		
     case "PositionFront":
         SideMod = 1
-        //Find Target position 
-        //Move there 
+        event_user(4)
+        event_user(5)
         event_user(3) 
         event_user(1)
         break;
 		
     case "PositionBehind":
         SideMod = -1
-        //Find Target position 
-        //Move there 
+        event_user(4)
+        event_user(5)
         event_user(3) 
         event_user(1)
         break;
 		
 	case "Hit":
+		event_user(3)
+		speed = 0
+		break
+		
+	case "Queueing":
 		event_user(3)
 		break
 }
