@@ -2,6 +2,8 @@
 // You can write your code in this editor
 AttackType = "";
 
+
+//Button inputs for each attack
 if(keyboard_check(vk_numpad4) || keyboard_check(ord("J")) || keyboard_check(vk_left))
 {
 	AttackType = "Basic Punch";

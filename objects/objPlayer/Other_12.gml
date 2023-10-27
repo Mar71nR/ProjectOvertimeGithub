@@ -4,6 +4,7 @@
 #macro LayerSize 35
 var MyAttack = 0
 
+//Checks what punch it is
 if(IsHit == false && CurrentHP > 0)
 {
 	if (AttackType == "Basic Punch")

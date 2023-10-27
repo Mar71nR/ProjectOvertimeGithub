@@ -1,34 +1,58 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(CurrentHP > 0){
+var MyBR = instance_nearest(x,y, objBattleRegion)
+
+if(CurrentHP > 0)
+{
      //Checks for A or D button press 
 	XSpeed = 0;
-	if(keyboard_check(ord("A"))){
+	if(keyboard_check(ord("A")))
+	{
 		XSpeed = -1*Speed;
-	}else if(keyboard_check(ord("D"))){
+	}else if(keyboard_check(ord("D")))
+	{
 		XSpeed = Speed;
 	}
 	//Check if W or S are pressed
 	YSpeed = 0;
-	if(OnGround == true){
-		if(keyboard_check(ord("W"))){
+	if(OnGround == true)
+	{
+		if(keyboard_check(ord("W")))
+		{
 			YSpeed = -1*Speed;
-		} else if(keyboard_check(ord("S"))){
+		} else if(keyboard_check(ord("S")))
+		{
 			YSpeed = Speed;
 		}
 	}
-	if(IsAttacking == false && IsHit = false){
+	if(IsAttacking == false && IsHit = false)
+	{
         
+		if(MyBR.IsActive == true)
+		{
+			if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge + 35, MyBR.TopEdge, MyBR.RightEdge, MyBR.BottomEdge) == false || place_free(x + XSpeed * SpeedMod, y) == false)
+			{
+			XSpeed = 0	
+			}
+			
+			if (point_in_rectangle(x, y + YSpeed * SpeedMod, MyBR.LeftEdge + 35, MyBR.TopEdge, MyBR.RightEdge - 35, MyBR.BottomEdge) == false || place_free(x, y + YSpeed * SpeedMod) == false)
+			{
+			YSpeed = 0	
+			}
+		}
+		
     //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed 
-		if(OnGround==true){    
-		if(XSpeed != 0 && YSpeed != 0){
+		if(OnGround==true)
+		{    
+			if(XSpeed != 0 && YSpeed != 0)
+			{
 			x+=XSpeed*SpeedMod*.7;
 			y+=YSpeed*SpeedMod*.7;
-		}else if(XSpeed != 0 || YSpeed != 0){
+			}else if(XSpeed != 0 || YSpeed != 0)
+			{
 			x+=XSpeed*SpeedMod;
 			y+=YSpeed*SpeedMod;
-		}
-    
+			}
 		}else if(OnGround == false ){
 			x+=XSpeed*SpeedMod;
 		}
@@ -44,13 +68,15 @@ if(CurrentHP > 0){
 			sprite_index = sprPlyrWalking;
 		}
 	}
-	//If the player is on the ground, this sets their GroundY variable to their current y position 
-	if(OnGround == true){
+	//If the player is on the ground, their GroundY is equal to the current y position.
+	if(OnGround == true)
+	{
 		GroundY = y;
 	}
-//Sets the Players' depth based on their GroundY. We're using GroundY instead of y so that even when they're in the air, they will display in fornt of and behind the right objects. 
+//Sets the Players' depth. We're using GroundY in order for the player to move behind and in front of things.
 	depth = -1*GroundY;
-}else{
+}else
+{
     instance_destroy();
 }
 
