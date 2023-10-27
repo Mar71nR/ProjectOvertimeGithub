@@ -30,7 +30,8 @@ switch State{
 		break
 }
 
-
+TargetX = objPlayer.x
+		TargetY = objPlayer.y
 
 if(distance_to_point(TargetX,TargetY) < MoveSpeed){
     x = TargetX;
