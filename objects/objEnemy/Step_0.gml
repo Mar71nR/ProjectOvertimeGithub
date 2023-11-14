@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(OnGround == true){
-    GroundY = y;
+
+if (CurrentHP <= 0) {
+	instance_destroy(self)
 }
-depth = -1*GroundY;
 
 //if(IsHit == true)
 //{
@@ -47,5 +47,9 @@ switch (State){
 		break
 }
 
+if(OnGround == true){
+    GroundY = y;
+}
+depth = -1*GroundY;
 
 

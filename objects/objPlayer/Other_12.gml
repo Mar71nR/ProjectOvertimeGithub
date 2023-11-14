@@ -15,13 +15,30 @@ if(IsHit == false && CurrentHP > 0)
 	{
 		sprite_index = sprPlyrHeavyPunch
 		MyAttack = instance_create_layer(self.x,self.y, "Instances", ATKstrongPunch)
-	} else if (AttackType == "Uppercut")
+	} else if (AttackType == "Side Strong")
 	{
-		sprite_index = sprPlayerUppercut
-		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKuppercut)
-	} else if (AttackType == "Triple Punch"){
-		sprite_index = sprPlayerTripPunch
-		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKtriplePunch)
+		sprite_index = sprPlyrSideStrong
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKsideStrong)
+	} else if (AttackType == "Side Light")
+	{
+		sprite_index = sprPlyrSideLight
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKsideLight)
+	} else if (AttackType == "Up Strong")
+	{
+		sprite_index = sprPlyrUpStrong
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupStrong)
+	} else if (AttackType == "Up Light")
+	{
+		sprite_index = sprPlyrUpLight
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupLight)
+	} else if (AttackType == "Down Strong")
+	{
+		sprite_index = sprPlyrDownStrong
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKdownStrong)
+	} else if (AttackType == "Down Light")
+	{
+		sprite_index = sprPlyrDownLight
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKdownLight)
 	}
 }
 

@@ -2,6 +2,17 @@
 // You can write your code in this editor
 var MyBR = instance_nearest(x,y, objBattleRegion)
 
+//var up = keyboard_check(vk_up)
+//var down = keyboard_check(vk_down)
+//var right = keyboard_check(vk_right)
+//var left = keyboard_check(vk_left)
+
+//xVelocity = (right - left) * Speed
+//yVelocity = (down - up) * Speed
+
+//var predictedX = x + XSpeed
+//var predictedY = y + YSpeed
+
 if(CurrentHP > 0)
 {
      //Checks for A or D button press 
@@ -19,18 +30,18 @@ if(CurrentHP > 0)
 	{
 		if(keyboard_check(ord("W")))
 		{
-			YSpeed = -1*Speed;
+			YSpeed = (-1*Speed)*0.5;
 		} else if(keyboard_check(ord("S")))
 		{
-			YSpeed = Speed;
+			YSpeed = Speed*0.5;
 		}
 	}
 	if(IsAttacking == false && IsHit = false)
 	{
-        
+        //if they are in the Battle Region, they can't move out
 		if(MyBR.IsActive == true)
 		{
-			if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge + 35, MyBR.TopEdge, MyBR.RightEdge, MyBR.BottomEdge) == false || place_free(x + XSpeed * SpeedMod, y) == false)
+			if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge + 35, MyBR.TopEdge, MyBR.RightEdge - 35, MyBR.BottomEdge) == false || place_free(x + XSpeed * SpeedMod, y) == false)
 			{
 			XSpeed = 0	
 			}

@@ -29,8 +29,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Punches",
-    "path": "folders/Sprites/Punches.yy",
+    "name": "Hboxes",
+    "path": "folders/Sprites/Player/Hboxes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

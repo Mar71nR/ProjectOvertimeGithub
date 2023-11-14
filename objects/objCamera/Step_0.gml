@@ -16,10 +16,10 @@ switch State{
 		break
 	
 	case "Region":
-		var MinX = objBattleRegion.LeftEdge + (1366/2)
-		var MaxX = objBattleRegion.RightEdge - (1366/2)
-		var MinY = objBattleRegion.TopEdge + (768/2)
-		var MaxY = objBattleRegion.BottomEdge - (768/2)
+		var MinX = objBattleRegion.LeftEdge + 683
+		var MaxX = objBattleRegion.RightEdge - 683
+		var MinY = objBattleRegion.TopEdge + 384
+		var MaxY = objBattleRegion.BottomEdge - 384
 		
 		TargetX = clamp(objPlayer.x, MinX, MinX)
 		TargetY = clamp(objPlayer.y, MinY, MaxY)
