@@ -4,7 +4,10 @@
   "name": "ATKsideLight",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"juggleValue","path":"objects/ATK/ATK.yy",},"value":"20",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"Damage","path":"objects/ATK/ATK.yy",},"value":"20",},
+  ],
   "parent": {
     "name": "SidePunches",
     "path": "folders/Objects/ATK's/SidePunches.yy",

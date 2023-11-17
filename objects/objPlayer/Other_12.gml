@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-#macro LayerSize 35
+
 var MyAttack = 0
 
 //Checks what punch it is
@@ -23,14 +23,6 @@ if(IsHit == false && CurrentHP > 0)
 	{
 		sprite_index = sprPlyrSideLight
 		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKsideLight)
-	} else if (AttackType == "Up Strong")
-	{
-		sprite_index = sprPlyrUpStrong
-		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupStrong)
-	} else if (AttackType == "Up Light")
-	{
-		sprite_index = sprPlyrUpLight
-		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupLight)
 	} else if (AttackType == "Down Strong")
 	{
 		sprite_index = sprPlyrDownStrong
@@ -39,7 +31,15 @@ if(IsHit == false && CurrentHP > 0)
 	{
 		sprite_index = sprPlyrDownLight
 		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKdownLight)
-	}
+	}/*if (AttackType == "Up Strong")
+	{
+		sprite_index = sprPlyrUpStrong
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupStrong)
+	} else if (AttackType == "Up Light")
+	{
+		sprite_index = sprPlyrUpLight
+		MyAttack = instance_create_layer(self.x, self.y, "Instances", ATKupLight)
+	} else */
 }
 
 if (MyAttack != 0)

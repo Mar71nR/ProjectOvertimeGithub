@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+#macro LayerSize 35
 var MyBR = instance_nearest(x,y, objBattleRegion)
 
 //var up = keyboard_check(vk_up)
@@ -36,6 +37,20 @@ if(CurrentHP > 0)
 			YSpeed = Speed*0.5;
 		}
 	}
+	
+//	var predictedX = x + XSpeed
+//	var predictedY = y + YSpeed
+//	
+//	if(!place_meeting(predictedX, y, CollisionBox)){
+//	} else {
+//		predictedX = x
+//		while(!place_meeting(predictedX, y, CollisionBox))
+//		{
+//			predictedX += sign(XSpeed)
+//		}
+//		x = predictedX - sign(XSpeed)
+//	}
+	
 	if(IsAttacking == false && IsHit = false)
 	{
         //if they are in the Battle Region, they can't move out

@@ -3,7 +3,7 @@
 
 if (CurrentHP <= 0/* && OnGround == true*/) {
 	audio_play_sound(sfxDeath,10,false)
-	objPlayer.CurrentHP = objPlayer.CurrentHP + 30
+	objPlayer.CurrentHP = objPlayer.CurrentHP + MaxHP
 	instance_destroy(self)
 }
 

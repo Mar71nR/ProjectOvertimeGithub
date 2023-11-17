@@ -9,12 +9,12 @@ draw_ellipse(x-40,(y+8)+z,x+40,(y-8)+z,false);
 draw_set_alpha(1)
 draw_self()
 
-draw_text(x, y, State + "\nIA:" + string(InAir) + " Up:" + string(InAirUp) +
-		" Down:" + string(InAirDown)+ " OG: " + string(OnGround) + "\nX: " +
-		string(x) + " Y: " + string(y) + " Z: " + string(z) + "\nzVel: " +
-		string(zVelocity) + " CurrY: " + string(currentY) + " HP: " +
-		string(CurrentHP) + "\n MA: " + string(MyAction) + " Aggro: " +
-		string(Aggressiveness))
+//draw_text(x, y, State + "\nIA:" + string(InAir) + " Up:" + string(InAirUp) +
+//		" Down:" + string(InAirDown)+ " OG: " + string(OnGround) + "\nX: " +
+//		string(x) + " Y: " + string(y) + " Z: " + string(z) + "\nzVel: " +
+//		string(zVelocity) + " CurrY: " + string(currentY) + " HP: " +
+//		string(CurrentHP) + "\n MA: " + string(MyAction) + " Aggro: " +
+//		string(Aggressiveness))
 
 
 

@@ -46,15 +46,15 @@ if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk"){
 	AttackType = "Side Strong"
 } else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk+Side"){
 	AttackType = "Side Light"
-} else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk+Up"){
-	AttackType = "Up Strong"
-} else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk+Up"){
-	AttackType = "Up Light"
 } else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk+Down"){
 	AttackType = "Down Strong"
 } else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk+Down"){
 	AttackType = "Down Light"
-}
+}/*if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "SAtk+Up"){
+	AttackType = "Up Strong"
+} else if (ds_list_find_value(CommandList,ds_list_size(CommandList)-1) == "LAtk+Up"){
+	AttackType = "Up Light"
+} else*/ 
 
 if(OnGround == true)
 {	

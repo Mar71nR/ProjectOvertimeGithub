@@ -4,7 +4,13 @@
   "name": "ATKsideStrong",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"juggleValue","path":"objects/ATK/ATK.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"Damage","path":"objects/ATK/ATK.yy",},"value":"30",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"DMGFrame","path":"objects/ATK/ATK.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"StunLength","path":"objects/ATK/ATK.yy",},"value":"4",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"depth","path":"objects/ATK/ATK.yy",},"value":"-1*y",},
+  ],
   "parent": {
     "name": "SidePunches",
     "path": "folders/Objects/ATK's/SidePunches.yy",
