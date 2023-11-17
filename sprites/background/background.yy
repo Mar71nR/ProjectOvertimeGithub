@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "background",
-  "bbox_bottom": 159,
+  "bbox_bottom": 419,
   "bbox_left": 0,
-  "bbox_right": 271,
+  "bbox_right": 713,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64f4968d-07a1-4fd6-ba1f-a3aa6bdda99e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c964608e-1728-4b50-93a2-fd650faa14a0",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 160,
+  "height": 420,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"06f0ce03-78b9-4722-82cd-77847832ef06","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b7421182-6d8a-468f-a427-4f1198515ad4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64f4968d-07a1-4fd6-ba1f-a3aa6bdda99e","path":"sprites/background/background.yy",},},},"Disabled":false,"id":"61fb5278-d4ed-4d0c-84c0-0fabe89de933","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c964608e-1728-4b50-93a2-fd650faa14a0","path":"sprites/background/background.yy",},},},"Disabled":false,"id":"b2bb2c46-9146-4cd4-a98f-3824afdda174","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 272,
+  "width": 714,
 }

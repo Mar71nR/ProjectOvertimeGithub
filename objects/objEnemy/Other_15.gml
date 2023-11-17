@@ -9,7 +9,7 @@ if (point_distance(x, y, TargetX, TargetY) >= Speed)
 	speed = 0
 }
 
-if (point_distance(x, y, TargetX, TargetY) < 200 && ds_list_size(objPlayer.EnemyList) < 2 &&
+if (point_distance(x, y, TargetX, TargetY) < 200 && ds_list_size(objPlayer.EnemyList) < 3 &&
 		ds_list_find_index(objPlayer.EnemyList, id) == -1)
 	{
 		ds_list_add(objPlayer.EnemyList, id)

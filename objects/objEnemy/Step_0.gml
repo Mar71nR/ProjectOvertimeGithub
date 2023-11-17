@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (CurrentHP <= 0) {
+if (CurrentHP <= 0/* && OnGround == true*/) {
+	audio_play_sound(sfxDeath,10,false)
+	objPlayer.CurrentHP = objPlayer.CurrentHP + 30
 	instance_destroy(self)
 }
 
@@ -12,8 +14,13 @@ if (CurrentHP <= 0) {
 //{
 //	sprite_index = sprEnmIdle;
 //}
-
-event_user(0)
+if(OnGround == true){
+	InAir = false
+	InAirUp = false
+	InAirDown = false
+    GroundY = y
+	event_user(0)
+}
 
 switch (State){
     case "Idle":
@@ -40,6 +47,9 @@ switch (State){
 	case "Hit":
 		event_user(3)
 		speed = 0
+		
+		zVelocity = jumpPower
+		
 		break
 		
 	case "Queueing":
@@ -47,8 +57,55 @@ switch (State){
 		break
 }
 
-if(OnGround == true){
-    GroundY = y;
+if (InAir = true){
+	speed = 0
+	zVelocity = (zVelocity + force_gravity)
+	var predictedZ = y + zVelocity
+
+	if(!place_meeting(x, predictedZ, currentY))
+	{
+		y = y + zVelocity
+	} else 
+	{
+		predictedZ = y
+		while (!place_meeting(x, predictedZ, currentY))
+		{
+			predictedZ += sign(zVelocity)
+		}
+		y= predictedZ - sign(zVelocity)
+		if(InAirUp && !InAirDown)
+		{
+			zVelocity = 0
+			OnGround = false
+			InAirDown = true
+			InAirUp = true
+			canJuggle = true
+		}else 
+		{
+			zVelocity = 0
+			currentY = 0
+			OnGround = true
+			InAir = false
+			InAirDown = false
+			InAirUp = false
+			canJuggle = false
+		}
+	}
+	if ((y + sprite_height / 2) >= room_height)//we hit the ground
+	{
+		y = currentY
+		zVelocity = 0
+		currentY = 0
+		OnGround = true
+		InAir = false
+		InAirDown = false
+		InAirUp = false
+		canJuggle = false
+	}
+	if(zVelocity>0)
+	{
+		InAirDown = true              
+	}
 }
 depth = -1*GroundY;
 

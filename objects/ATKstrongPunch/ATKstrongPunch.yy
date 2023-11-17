@@ -9,6 +9,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"Damage","path":"objects/ATK/ATK.yy",},"value":"25",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"StunLength","path":"objects/ATK/ATK.yy",},"value":"10",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"juggleValue","path":"objects/ATK/ATK.yy",},"value":"10",},
   ],
   "parent": {
     "name": "ATK's",
