@@ -2,14 +2,17 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "ATKsideStrong",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"objBossOrc","path":"objects/objBossOrc/objBossOrc.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"juggleValue","path":"objects/ATK/ATK.yy",},"value":"30",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"Damage","path":"objects/ATK/ATK.yy",},"value":"30",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"DMGFrame","path":"objects/ATK/ATK.yy",},"value":"3",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"StunLength","path":"objects/ATK/ATK.yy",},"value":"4",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"depth","path":"objects/ATK/ATK.yy",},"value":"-1*y",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"ATK","path":"objects/ATK/ATK.yy",},"propertyId":{"name":"juggleValue","path":"objects/ATK/ATK.yy",},"value":"20",},
   ],
   "parent": {
     "name": "SidePunches",

@@ -38,6 +38,45 @@ if(CurrentHP > 0)
 		}
 	}
 	
+	var predictedX = x + XSpeed
+	var predictedY = y + YSpeed
+
+	if(!place_meeting(predictedX, y, collisionBox)) {
+	} else {
+		predictedX = x
+		while(!place_meeting(predictedX, y, collisionBox)){
+			predictedX += sign(XSpeed)
+		}
+		XSpeed = 0
+		//x = predictedX - sign(XSpeed)
+	}
+	if(!place_meeting(x, predictedY, collisionBox)) {
+	} else {
+		predictedY = y
+		while(!place_meeting(x, predictedY,collisionBox)){
+			predictedY += sign(YSpeed)
+		}
+		YSpeed = 0
+		//y = predictedY - sign(YSpeed)
+	}
+	
+	//if they are in the Battle Region, they can't move out
+		if(MyBR.IsActive == true)
+		{
+			if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge,
+				MyBR.TopEdge, MyBR.RightEdge, MyBR.BottomEdge) == false ||
+				place_free(x + XSpeed * SpeedMod, y) == false)
+			{
+				XSpeed = 0	
+			}
+			
+			if (point_in_rectangle(x, y + YSpeed * SpeedMod, MyBR.LeftEdge +
+				35, MyBR.TopEdge, MyBR.RightEdge - 35, MyBR.BottomEdge) == false ||
+				place_free(x, y + YSpeed * SpeedMod) == false)
+			{
+				YSpeed = 0	
+			}
+		}
 //	var predictedX = x + XSpeed
 //	var predictedY = y + YSpeed
 //	
@@ -53,23 +92,7 @@ if(CurrentHP > 0)
 	
 	if(IsAttacking == false && IsHit = false)
 	{
-        //if they are in the Battle Region, they can't move out
-		if(MyBR.IsActive == true)
-		{
-			if (point_in_rectangle(x + XSpeed * SpeedMod, y, MyBR.LeftEdge +
-				35, MyBR.TopEdge, MyBR.RightEdge - 35, MyBR.BottomEdge) == false ||
-				place_free(x + XSpeed * SpeedMod, y) == false)
-			{
-			XSpeed = 0	
-			}
-			
-			if (point_in_rectangle(x, y + YSpeed * SpeedMod, MyBR.LeftEdge +
-				35, MyBR.TopEdge, MyBR.RightEdge - 35, MyBR.BottomEdge) == false ||
-				place_free(x, y + YSpeed * SpeedMod) == false)
-			{
-			YSpeed = 0	
-			}
-		}
+        
 		
     //If the player is on the ground move them with XSpeed and YSpeed, otherwise ignore YSpeed 
 		if(OnGround==true)
@@ -83,6 +106,9 @@ if(CurrentHP > 0)
 			x+=XSpeed*SpeedMod;
 			y+=YSpeed*SpeedMod;
 			}
+			
+			
+			
 		}else if(OnGround == false ){
 			x+=XSpeed*SpeedMod;
 		}
@@ -113,7 +139,7 @@ if(CurrentHP > 0)
 //If the player is on the ground, their GroundY is equal to the current y position.
 if(OnGround == true)
 {
-	GroundY = y;
+	GroundY = y;	
 }
 
 if(CurrentHP >= MaxHP){

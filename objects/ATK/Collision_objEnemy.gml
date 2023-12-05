@@ -18,7 +18,10 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize &&
 	other.canJuggle = true
 	other.alarm[0] = StunLength
 	
-	audio_play_sound(sfxEnemyHit,10,false)
+	audio_play_sound(sfxEnemyHit,6,false)
+	//audio_play_sound(sfxLightPunch,10,false)
+	instance_create_layer(other.x, other.y-32, "VFX", vfxPunchFX)
+	addScreenshake(8,2)
 	Hit = true
 //	}
 }

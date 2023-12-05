@@ -16,15 +16,15 @@ switch State{
 		break
 	
 	case "Region":
-		var MinX = objBattleRegion.LeftEdge + 683
-		var MaxX = objBattleRegion.RightEdge - 683
-		var MinY = objBattleRegion.TopEdge + 384
-		var MaxY = objBattleRegion.BottomEdge - 384
+		var MinX = MyBr.LeftEdge + 683
+		var MaxX = MyBr.RightEdge - 683
+		var MinY = MyBr.TopEdge + 384
+		var MaxY = MyBr.BottomEdge - 384
 		
-		TargetX = clamp(objPlayer.x, MinX, MinX)
+		TargetX = clamp(objPlayer.x, MinX, MaxX)
 		TargetY = clamp(objPlayer.y, MinY, MaxY)
 		
-		if (MyBr.IsActive == false || distance_to_object(objBattleRegion) > 0)
+		if (MyBr.IsActive == false || distance_to_object(MyBr) > 0)
 		{
 			State = "Player"
 		}
@@ -42,8 +42,8 @@ if(distance_to_point(TargetX,TargetY) < MoveSpeed){
     move_towards_point(TargetX,TargetY,MoveSpeed);
 }
 
-
-
+//var shakeX = objPlayer.x + random_range(-screenshake, screenshake)
+//var shakeY = objPlayer.y - 48 + random_range(-screenshake, screenshake)
 
 
 

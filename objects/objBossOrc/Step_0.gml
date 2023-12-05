@@ -4,6 +4,8 @@
 if (CurrentHP <= 0/* && OnGround == true*/) {
 	audio_play_sound(sfxDeath,10,false)
 	objPlayer.CurrentHP = objPlayer.CurrentHP + MaxHP
+	instance_create_layer(self.x, self.y, "Instances", vfxExplosion)
+	FadeInOut(room_goto_next(), 0.7, 0.0075)
 	instance_destroy(self)
 }
 
@@ -16,10 +18,6 @@ if (CurrentHP <= 0/* && OnGround == true*/) {
 //	sprite_index = sprEnmIdle;
 //}
 if(OnGround == true){
-	InAir = false
-	InAirUp = false
-	InAirDown = false
-    GroundY = y
 	event_user(0)
 }
 
@@ -51,6 +49,7 @@ switch (State){
 		break
 		
 	case "Queueing":
+		event_user(3)
 		break
 }
 

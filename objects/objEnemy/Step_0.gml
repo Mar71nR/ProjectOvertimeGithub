@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (CurrentHP <= 0/* && OnGround == true*/) {
+if (CurrentHP <= 0 /*&& OnGround == true*/) {
 	audio_play_sound(sfxDeath,10,false)
 	objPlayer.CurrentHP = objPlayer.CurrentHP + MaxHP
+	instance_create_layer(self.x, self.y, "Instances", vfxExplosion)
 	instance_destroy(self)
 }
 
@@ -59,7 +60,7 @@ switch (State){
 
 if (InAir = true){
 	speed = 0
-	zVelocity = (zVelocity + force_gravity)
+	zVelocity = zVelocity + force_gravity
 	var predictedZ = y + zVelocity
 
 	if(!place_meeting(x, predictedZ, currentY))
@@ -91,7 +92,7 @@ if (InAir = true){
 			canJuggle = false
 		}
 	}
-	if ((y + sprite_height / 2) >= room_height)//we hit the ground
+	if ((y + sprite_height / 2) >= currentY + sprite_height)//we hit the ground
 	{
 		y = currentY
 		zVelocity = 0

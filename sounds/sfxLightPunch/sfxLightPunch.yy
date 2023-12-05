@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sfxStrongPunch1",
+  "name": "sfxLightPunch",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 320,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.267896,
+  "duration": 1.593469,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 48000,
-  "soundFile": "sfxStrongPunch1.wav",
+  "soundFile": "sfxLightPunch.mp3",
   "type": 0,
   "volume": 1.0,
 }

@@ -22,7 +22,7 @@ switch(State)
 			sprite_index = sprBossOrcWalking
 		}else
 		{
-			sprite_index = sprBossOrcWalking
+			sprite_index = sprBossOrcIdle
 		}
 		break
 		
