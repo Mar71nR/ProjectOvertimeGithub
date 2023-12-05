@@ -9,6 +9,7 @@ if(image_index == DMGFrame && abs(depth - other.depth) <= LayerSize &&
 	other.alarm[0] = StunLength
 	
 	audio_play_sound(sfxEnemyHit,10,false)
+	instance_create_layer(other.x, other.y-32, "VFX", vfxPunchFX)
 	Hit = true
 }
 

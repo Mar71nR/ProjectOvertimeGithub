@@ -44,7 +44,7 @@ switch (State){
 		
 	case "Hit":
 		event_user(3)
-		speed = 0
+		speed = 0		
 		break
 		
 	case "Queueing":
@@ -52,7 +52,7 @@ switch (State){
 		break
 }
 
-depth = -1*GroundY;
+depth = -1*y;
 
 
 

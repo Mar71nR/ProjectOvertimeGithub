@@ -9,7 +9,7 @@ if(keyboard_check(vk_numpad4) || keyboard_check(ord("J")) || keyboard_check(vk_l
 	ButtonCombo += "+LAtk"
 }
 
-if(keyboard_check(vk_numpad8) || keyboard_check(ord("I")) || keyboard_check(vk_up))
+if(keyboard_check(vk_numpad8) || keyboard_check(ord("K")) || keyboard_check(vk_up))
 {
 	ButtonCombo += "+SAtk"
 }

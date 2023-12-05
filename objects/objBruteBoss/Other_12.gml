@@ -7,11 +7,11 @@ if(objPlayer.CurrentHP > 0)
 	
 	if((Aggressiveness > 0.75 && AttackChance >= 90) || (Aggressiveness > 1 && AttackChance >= 75))
 	{
-		sprite_index = sprBossOrcStrongAttack
-		MyAttack = instance_create_layer(x, y, "Instances", ATKstrongPunch)
+		sprite_index = sprBruteLightPunch
+		MyAttack = instance_create_layer(x, y, "Instances", ATKsideStrong)
 	} else {
-		sprite_index = sprBossOrcStrongAttack
-		MyAttack = instance_create_layer(x, y, "Instances", ATKstrongPunch)
+		sprite_index = sprBruteStrongPunch
+		MyAttack = instance_create_layer(x, y, "Instances", ATKsideStrong)
 	}
 	
 	speed = 0
