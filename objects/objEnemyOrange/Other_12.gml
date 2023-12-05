@@ -8,11 +8,11 @@ if(objPlayer.CurrentHP > 0)
 	if((Aggressiveness > 0.75 && AttackChance >= 90) || (Aggressiveness > 1 && AttackChance >= 75))
 	{
 		sprite_index = sprEnemyOrangeStrongPunch
-		MyAttack = instance_create_layer(x, y, "Instances", ATKstrongPunch)
+		MyAttack = instance_create_layer(x, y, "Instances", ATKsideStrong)
 	} else
 	{
 		sprite_index = sprEnemyOrangeBasicPunch
-		MyAttack = instance_create_layer(x, y, "Instances", ATKbasicPunch)
+		MyAttack = instance_create_layer(x, y, "Instances", ATKsideStrong)
 	}
 	
 	speed = 0

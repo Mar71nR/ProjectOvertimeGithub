@@ -19,8 +19,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Brutes",
-    "path": "folders/Objects/Enemies/Brutes.yy",
+    "name": "Bosses",
+    "path": "folders/Objects/Enemies/Bosses.yy",
   },
   "parentObjectId": null,
   "persistent": false,
