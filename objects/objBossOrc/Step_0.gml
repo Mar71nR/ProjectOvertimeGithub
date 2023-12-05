@@ -53,7 +53,7 @@ switch (State){
 		break
 }
 
-depth = -1*GroundY;
+depth = -1*y;
 
 
 

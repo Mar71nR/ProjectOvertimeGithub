@@ -4,7 +4,7 @@
 switch(State)
 {
 	case "Idle":
-		sprite_index = sprBossOrcIdle
+		sprite_index = sprBruteIdle
 		break
 		
 	case "PositionFront":
@@ -19,10 +19,10 @@ switch(State)
 		
 		if (speed != 0)
 		{
-			sprite_index = sprBossOrcWalking
+			sprite_index = sprBruteWalking
 		}else
 		{
-			sprite_index = sprBossOrcIdle
+			sprite_index = sprBruteIdle
 		}
 		break
 		
@@ -40,10 +40,10 @@ switch(State)
 		
 		if (speed != 0)
 		{
-			sprite_index = sprBossOrcWalking
+			sprite_index = sprBruteWalking
 		} else 
 		{
-			sprite_index = sprBossOrcIdle
+			sprite_index = sprBruteIdle
 		}
 		break
 }

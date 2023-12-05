@@ -19,7 +19,7 @@ switch (State){
 		
 	case "PositionFront":
 	case "PositionBehind":
-		if (instance_place(TargetX,TargetY,objBossOrc) != noone && instance_place(TargetX, TargetY, objBossOrc) != id)
+		if (instance_place(TargetX,TargetY,objBrute) != noone && instance_place(TargetX, TargetY, objBrute) != id)
 		{
 			if (State == "PositionFront")
 			{
@@ -37,9 +37,9 @@ switch (State){
 		break
 		
 	case "Queueing":
-	if (ds_list_size(objPlayer.EnemyList) < 3)
+		if (ds_list_size(objPlayer.EnemyList) < 3)
 		{
-//			ds_list_add(objPlayer.EnemyList, id)
+			//ds_list_add(objPlayer.EnemyList, id)
 			if (x < objPlayer.x)
 			{
 				State = "PositionBehind"
