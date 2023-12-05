@@ -62,7 +62,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"ATKupLight","path":"objects/ATKupLight/ATKupLight.yy",},},
@@ -184,7 +184,6 @@
     {"roomId":{"name":"LevelTwo","path":"rooms/LevelTwo/LevelTwo.yy",},},
     {"roomId":{"name":"LevelThree","path":"rooms/LevelThree/LevelThree.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
